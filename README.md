@@ -8,6 +8,6 @@ All the programming projects of Programming Subject of 1st Semester
 
 ## задание 2
 
-![escreva](./images/lab01/img02.png)
+![escreva](./images/lab02/img02.png)
 
 ## задание 3
