@@ -19,3 +19,9 @@
 ## Задание 5 — Инициалы и длина строки
 
 ![05_initials_and_len](./imgs/lab01/05_initials_and_len.png)
+
+# ЛР2 — Коллекции и матрицы (list/tuple/set/dict)
+
+## Задачки
+### Задание 1 — arrays.py
+![Output/Result](./imgs/lab02/arrays_output.png)
