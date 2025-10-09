@@ -24,6 +24,6 @@ def flatten(mat: list[list | tuple]) -> list: #creating function with returnig a
             raise TypeError('The element or line is not a list or tuple') #Otherwise, return ERROR
     return flat_list #Return thenew list
 
-print(min_max([42]))
+print(min_max([42, -1, 3]))
 print(unique_sorted([-1, -1, 0, 2, 2,4]))
 print(flatten([[1,2],(3,4),[5]]))
