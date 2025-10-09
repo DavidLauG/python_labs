@@ -1,17 +1,16 @@
+#The parametres in list can be flot or int: transpose(mat:list[list [float | int]])
 def transpose(mat:list[list [float | int]]) -> list[list[float | int]] | None:
     if not mat:
-        return None
+        return None     #Empty list
     row_length = len (mat[0])
-
-    if any(len(row)!=row_length for row in mat):
+    if any(len(row)!=row_length for row in mat): #Analyse if it's retangular matrix 
         raise ValueError('The matrix must be rectangular')
-    return[[mat[j][i] for j in range(len(mat))] for i in range(row_length)]
+    return[[mat[i][j] for i in range(len(mat))] for j in range(row_length)] #Return mat[i][j]
 
 def row_sums(mat:list[list[float|int]]) -> list[float]:
     if not mat:
         return[]
     row_length=len(mat[0])
-
     if any(len(row)!=row_length for row in mat):
         raise ValueError('The matrix must be rectangular')
     return [sum(row) for row in mat]
@@ -20,7 +19,6 @@ def col_sums(mat:list[list[float| int]]) -> list [float]:
     if not mat:
         return[]
     row_length=len(mat[0])
-
     if any(len(row)!=row_length for row in mat):
         raise ValueError ('The matrix must be rectangular')
     return [sum(mat[i][j] for i in range (len(mat))) for j in range(row_length)]
