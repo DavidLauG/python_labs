@@ -7,8 +7,8 @@ def format_record(rec:tuple[str, str, float]) -> str:
     if not isinstance(fio, str) or not isinstance(group, str):
         raise ValueError("They must be string")
     if not isinstance(gpa,  float):
-        raise ValueError("gpa must be a number")
-    
+        raise ValueError("gpa must be a float number")
+
     fio = rec[0].strip() #Get the full name.
     group=rec[1].strip() #Get the goup.
     gpa=rec[2] #Get gpa.
@@ -25,6 +25,4 @@ def format_record(rec:tuple[str, str, float]) -> str:
     formatted_gpa=f"{gpa:.2f}" #As requested on the exercise.
     return f'{surname} {''.join(initials)}, гр. {group}, GPA {formatted_gpa}'
 #return: «Surname» «Init_name.Init_name»., гр. «group», GPA «GPA»
-
-student=("laurindo David", "", 4.6)
-print(format_record(student))
+print(format_record(("laurindo David", "BIVT-6", 4.6)))
