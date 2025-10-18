@@ -1,5 +1,13 @@
 import re
 
+def verify_matrix (mat:list[list [float | int]]):
+    if not mat:
+        return None     #Empty list
+    row_length = len (mat[0])
+    if any(len(row)!=row_length for row in mat): #Analyse if it's retangular matrix 
+        raise ValueError('Matrix must be rectangular')
+    return row_length
+
 def normalize(text: str, *, casefold: bool = True, yo2e: bool = True) -> str:
     text=text.split() #Create a list to remove the specials chars.
     text=" ".join(text) #Join the elementes on the list, separating by one space.
