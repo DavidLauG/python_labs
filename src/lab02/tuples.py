@@ -9,13 +9,12 @@ def format_record(rec:tuple[str, str, float]) -> str:
     if not isinstance(gpa,  float):
         raise ValueError("gpa must be a float number")
 
-    fio = rec[0].strip() #Get the full name.
+    fio = rec[0].strip().title() #Get the full name and put the Initiasl in Capital.
     group=rec[1].strip() #Get the goup.
     gpa=rec[2] #Get gpa.
 
     names=fio.split() # Create a list spliting the full name.
-    surname=names[0].capitalize() #Put the 1st letter in capital and Get it.
-    initials=[name[0].upper()+ '.' for name in names[1:]] #Get the initials and put a dot ".".
+    initials=[name[0]+ '.' for name in names[1:]] #Get the initials and put a dot ".".
 
     if not fio or not group.strip():
         raise ValueError("fio and group cannot be empty")
@@ -23,6 +22,6 @@ def format_record(rec:tuple[str, str, float]) -> str:
         raise ValueError("The full name must contain at least the last name and first name.")
 
     formatted_gpa=f"{gpa:.2f}" #As requested on the exercise.
-    return f'{surname} {''.join(initials)}, гр. {group}, GPA {formatted_gpa}'
+    return f'{names[0]} {' '.join(initials)}, гр. {group}, GPA {formatted_gpa}'
 #return: «Surname» «Init_name.Init_name»., гр. «group», GPA «GPA»
-print(format_record(("laurindo David", "BIVT-6", 4.6)))
+print(format_record(("laurindo david gonçalo", "BIVT-6", 4.6)))
