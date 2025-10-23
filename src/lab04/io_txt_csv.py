@@ -22,12 +22,11 @@ def read_text(path: str | Path, encoding: str = "utf-8") -> str:
 def write_csv(rows: list[tuple | list], path: str | Path, header: tuple[str, ...] | None = None) -> None:
     p = Path(path)
     rows = list(rows)
-    
     first_row_len = len(rows[0])
     if not all(len(row) == first_row_len for row in rows):
         raise ValueError("All data lines must be the same length.")
 
-    # Если есть заголовок, проверяем его длину
+    # If there is a title, we check its length
     if header is not None and len(header) != first_row_len:
         raise ValueError("The header length does not match the length of the data lines.")
     
