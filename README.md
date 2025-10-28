@@ -1,21 +1,24 @@
-# ЛР1 — Ввод/вывод и форматирование
+# ЛАБОРАТОРИИ ПРОГРАММИРОВАНИЯ
+## ЛР1 — Ввод/вывод и форматирование
 
-## Задание 1 — Привет и возраст
+Src File: [Source File Lab01](./src/lab01/)
 
-![01_greeting](./imgs/lab01/01_greeting.png)
+Src README: [README File Lab01](./src/lab01/README.md)
 
-## Задание 2 — Сумма и среднее
+## ЛР2 — Коллекции и матрицы (list/tuple/set/dict)
 
-![02_sum_avg](./imgs/lab01/02_sum_avg.png)
+Src File: [Source File Lab02](./src/lab02/)
 
-## Задание 3 — Чек: скидка и НДС
+Src README: [README File Lab02](./src/lab02/README.md)
 
-![03_discount_vat](./imgs/lab01/03_discount_vat.png)
+## ЛР3 — Тексты и частоты слов (словарь/множество)
 
-## Задание 4 — Минуты → ЧЧ:ММ
+Src File: [Source File Lab03](./src/lab03/)
 
-![04_minutes_to_hhmm](./imgs/lab01/04_minutes_to_hhmm.png)
+Src README: [README File Lab03](./src/lab03/README.md)
 
-## Задание 5 — Инициалы и длина строки
+## ЛР4 — Файлы: TXT/CSV и отчёты по текстовой статистике
 
-![05_initials_and_len](./imgs/lab01/05_initials_and_len.png)
+Src File: [Source File Lab04](./src/lab04/)
+
+Src README: [README File Lab04](./src/lab04/README.md)
