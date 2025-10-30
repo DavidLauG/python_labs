@@ -26,8 +26,6 @@ def write_csv(rows: list[tuple | list], path: str | Path, header: tuple[str, ...
     # If there is a title, we check its length
     if header is not None and len(header) != first_row_len:
         raise ValueError("The header length does not match the length of the data lines.")
-    
-    
     with p.open("w", newline="", encoding="utf-8") as csvfile:
         w = csv.writer(csvfile)
         if header:

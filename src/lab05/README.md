@@ -1,20 +1,23 @@
 # ЛР5 — JSON и конвертации (JSON↔CSV, CSV→XLSX): Техническое задание
 
-## Задание A — модуль
-## Library: src/lab04/io_txt_csv.py
+## Задание A — Задание A — JSON ↔ CSV
 
-![Library_part01](../../imgs/lab04/io_txt_csv_1.png)
+![Code_Part01](../../imgs/lab05/json_csv_01.png)
 
-![Library_part01](../../imgs/lab04/io_txt_csv_2.png)
+![Code_Part02](../../imgs/lab05/json_csv_02.png)
 
-## Задание B — скрипт
+![Code_Part03](../../imgs/lab05/json_csv_03.png)
 
-![Code_Part01](../../imgs/lab04/text_report_1.png)
+![Code_Part04](../../imgs/lab05/json_csv_04.png)
 
-![Code_Part02](../../imgs/lab04/text_report_2.png)
+## Задание B — CSV → XLSX
+
+![Code_Part01](../../imgs/lab05/csv_xls_01.png)
+
+![Code_Part02](../../imgs/lab05/csv_xls_02.png)
 
 ## TEXT FILE
-![Result Text File](../../imgs/lab04/Text_file.png)
+![Result Text File](../../imgs/lab05/people_excel.png)
 
 ## CSV FILE
-![Result CSV File](../../imgs/lab04/CSV_file.png)
+![Result CSV File](../../imgs/lab05/people_from_json.png)
