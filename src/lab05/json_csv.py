@@ -35,12 +35,6 @@ def json_to_csv(json_path: str, csv_path: str) -> None:
     except FileNotFoundError:
         print(f"Error: File {json_path} not found")
         return False
-    except json.JSONDecodeError as e:
-        print(f"Error: Invalid JSON format - {e}")
-        return False
-    except Exception as e: #Others kind of error
-        print(f"Error: {e}")
-        return False
 def csv_to_json(csv_path: str, json_path: str) -> None:
     """
     Converts CSV to JSON (list of dictionaries).
@@ -88,8 +82,8 @@ def csv_to_json(csv_path: str, json_path: str) -> None:
 
 Json_People="data/samples/people.json"
 CSV_from_JSON="data/out/people_from_json.csv"
-json_to_csv(Json_People, CSV_from_JSON)
+#json_to_csv(Json_People, CSV_from_JSON)
 
 CSV_People="data/samples/people.csv"
 JSON_from_CSV="data/out/people_from_csv.json"
-csv_to_json(CSV_People, JSON_from_CSV)
+#csv_to_json(CSV_People, JSON_from_CSV)

@@ -43,3 +43,8 @@ Accurately format text representations of records (using a student as an example
 
 ### Цель: Разобраться с форматом JSON, сериализацией/десериализацией и табличными конвертациями.
 ### *[Go to Laboratory 05](./src/lab05/)*
+
+## ЛР6 — CLI‑утилиты с argparse (cat/grep‑lite + конвертеры): Техническое задание
+### Objective: Learn to create console tools with command line arguments, subcommands, and flags.
+### Цель: Научиться создавать консольные инструменты с аргументами командной строки, подкомандами и флагами.
+### *[Go to Laboratory 06](./src/lab06/)*

@@ -22,7 +22,7 @@ def csv_to_xlsx(csv_path: str, xlsx_path: str) -> None:
                 # Adicione cada linha do CSV à planilha
                 ws.append(row)
 
-        # Salve o workbook como um arquivo XLSX
+        # save o workbook como um arquivo XLSX
         wb.save(xlsx_path)
         print(f"Successfully converted '{csv_path}' to '{xlsx_path}' using openpyxl.")
 
@@ -33,7 +33,7 @@ def csv_to_xlsx(csv_path: str, xlsx_path: str) -> None:
 
 CSV_People="data/samples/people.csv"
 XLSX_from_CSV="data/out/people.xlsx"
-csv_to_xlsx(CSV_People, XLSX_from_CSV)
+#csv_to_xlsx(CSV_People, XLSX_from_CSV)
 CSV_Cities="data/samples/cities.csv"
 XLSX_from_CSV_C="data/out/cities.xlsx"
-csv_to_xlsx(CSV_Cities, XLSX_from_CSV_C)
+#csv_to_xlsx(CSV_Cities, XLSX_from_CSV_C)
