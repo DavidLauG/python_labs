@@ -8,10 +8,14 @@ from lab05.cvs_xlsx import csv_to_xlsx
 
 def main():
     parser=argparse.ArgumentParser(description="File conversion")
+    #Creating commands: creating support for subcommands.
+    # Subcommands will be stored in the "cmd" attribute.
     sub=parser.add_subparsers(dest="cmd")
 
     p1=sub.add_parser("json2csv")
+    # Argument "--in" required and stored in the "input" attribute.
     p1.add_argument("--in", dest="input", required=True)
+    # Argument "--out" required and stored in the "output" attribute.
     p1.add_argument("--out", dest="output", required=True)
 
     p2=sub.add_parser("csv2json")

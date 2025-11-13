@@ -15,7 +15,7 @@
 ## Result command stats
 ![Result command stats](../../imgs/lab06/result_comand_stats_cli_text.png)
 
-## Задание B — CLI‑конвертер CSV → XLSX
+## Задание B — CLI‑конвертер
 
 ## Code
 ![Code_Part01](../../imgs/lab06/cli_convert_code_1.png)

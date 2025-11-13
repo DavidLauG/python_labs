@@ -7,17 +7,29 @@ from lib.text import *
 from lab04.io_txt_csv import read_text
 
 def main():
-    parser=argparse.ArgumentParser(description="CLI-utilitary lab06")
+    parser=argparse.ArgumentParser(description="CLI-utilitary lab06") #Creating obj parse
+    #Creating commands: creating support for subcommands.
+    # Subcommands will be stored in the "command" attribute.
     subparser=parser.add_subparsers(dest="command")
 
+    #Creating the "cat" command with the help
     cat_parser=subparser.add_parser("cat", help="Display file contents")
+    #argument "--input" is required and must have a value. Ex: my_file.txt
     cat_parser.add_argument("--input", required=True)
+    #The "-n" flag argument is optional, but if used, its default value will be
+    # stored as "true". That is, it indicates that the "Line Numbers" functionality
+    # should be enabled in the program.
     cat_parser.add_argument("-n", action="store_true", help="Line Numbers")
 
+     #Creating the "stats"
     stats_parser=subparser.add_parser("stats", help="Word frequencies")
+    #argument "--input" is required and must have a value. Ex: my_file.txt
     stats_parser.add_argument("--input", required=True)
+    #argument "--topt" is optional with default int vaule 5
     stats_parser.add_argument("--top", type=int, default=5)
 
+    #It reads the instructions entered by the user via the CLI and
+    # analyzes them according to the instructions given above.
     args=parser.parse_args()
     try:
         if args.command=="cat" or args.command=="stats":
@@ -27,7 +39,7 @@ def main():
             with file.open('r', newline='', encoding='utf-8') as txt_file:
                 count = 1
                 for line in txt_file:
-                    s = line.rstrip()
+                    s = line.rstrip() #rigth strip
                     if args.n:
                         s = f'{count}: {s}'
                         count += 1
