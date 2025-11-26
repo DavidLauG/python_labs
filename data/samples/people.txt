@@ -1,6 +1,7 @@
-David
-Bob
-André
-Núria
-Lucas
-Helena
+name,age
+David,15
+Bob, 13
+André, 23
+Núria,4
+Lucas,15
+Helena,25

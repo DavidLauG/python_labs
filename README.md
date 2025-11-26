@@ -48,3 +48,8 @@ Accurately format text representations of records (using a student as an example
 ### Objective: Learn to create console tools with command line arguments, subcommands, and flags.
 ### Цель: Научиться создавать консольные инструменты с аргументами командной строки, подкомандами и флагами.
 ### *[Go to Laboratory 06](./src/lab06/)*
+
+## ЛР7 — Тестирование: pytest + стиль (black): Техническое задание
+### Goal: Learn to write unit tests in pytest, measure coverage, and maintain a consistent code style (black).
+### Цель: научиться писать модульные тесты на pytest, измерять покрытие и поддерживать единый стиль кода (black).
+### *[Go to Laboratory 07](./src/lab07/)*

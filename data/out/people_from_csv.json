@@ -1,10 +1,26 @@
 [
   {
     "name": "David",
-    "age": 21
+    "age": 15
   },
   {
     "name": "Bob",
+    "age": 13
+  },
+  {
+    "name": "André",
+    "age": 23
+  },
+  {
+    "name": "Núria",
+    "age": 4
+  },
+  {
+    "name": "Lucas",
+    "age": 15
+  },
+  {
+    "name": "Helena",
     "age": 25
   }
 ]
