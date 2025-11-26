@@ -1,6 +1,8 @@
 # ЛР7 — Тестирование: pytest + стиль (black)
+# NOTE: [click here](../../tests/) to go to the file code path
 
 ## Задание A. Тесты для src/lib/text.py
+# Note: [click here](../../tests/test_text.py) to go to the file code
 
 ## Code tests/test_text.py
 ![Code_Part01](../../imgs/lab07/test_text_code_1.png)
@@ -17,7 +19,7 @@
 ![Pytest](../../imgs/lab07/pytest_test_text.png)
 
 ## Задание B. Тесты для src/lab05/json_csv.py
-
+# Note: [click here](../../tests/test_json_csv.py)
 ## Code tests/test_json_csv.py
 ![Code_Part01](../../imgs/lab07/test_json_csv_code_1.png)
 
