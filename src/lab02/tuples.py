@@ -9,7 +9,7 @@ def format_record(rec: tuple[str, str, float]) -> str:
     if not isinstance(gpa, float):
         raise ValueError("gpa must be a float number")
 
-    fio = rec[0].strip().title()  # Get the full name and put the Initiasl in Capital.
+    fio = rec[0].strip().title()  # Get the full name and put the Initials in Capital.
     group = rec[1].strip()  # Get the goup.
     gpa = rec[2]  # Get gpa.
 

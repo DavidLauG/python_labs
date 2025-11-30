@@ -1,17 +1,17 @@
-#Объявление сборки
+#Build Declaration
 [build-system]
 requires = ["setuptools >= 77.0.3"]
 build-backend = "setuptools.build_meta"
 
-#Метаданные проекта
-##Имя
+#МProject Metadata
+##Name
 [project]
 name = "spam-eggs"
-##Версия
+##version
 version = "2025.0.0"
 
-#Зависимости
-##Для объявления опциональных зависимостей
+#Dependencies
+##For declaring optional dependencies
 [project.optional-dependencies]
 dev = [
   "pytest>=8.0",
@@ -19,7 +19,7 @@ dev = [
   "black>=24.0", #organização do código - estilo
   "ruff>=0.6"
 ]
-##Для runtime-зависимостей пишем:
+##For runtime dependencies, write:
 dependencies = [
   "requests>=2.32",
   "pandas>=2.2"
