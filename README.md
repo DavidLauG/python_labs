@@ -53,3 +53,8 @@ Accurately format text representations of records (using a student as an example
 ### Goal: Learn to write unit tests in pytest, measure coverage, and maintain a consistent code style (black).
 ### Цель: научиться писать модульные тесты на pytest, измерять покрытие и поддерживать единый стиль кода (black).
 ### *[Go to Laboratory 07](./src/lab07/)*
+
+## ЛР8 — ООП в Python: @dataclass Student, методы и сериализация
+### Goal: To learn the basics of object-oriented programming in Python, learn how to describe data models using @dataclass, implement methods and validation, and serialize/deserialize objects.
+### Цель: Цель: изучить основы объектно-ориентированного программирования в Python, научиться описывать модели данных с помощью @dataclass, реализовывать методы и валидацию, сериализовывать/десериализовывать объекты.
+### *[Go to Laboratory 08](./src/lab08/)*

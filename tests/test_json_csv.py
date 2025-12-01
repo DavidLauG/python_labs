@@ -61,6 +61,8 @@ def test_json_to_csv_roundtrip(tmp_path: Path):
 
     assert len(rows) == 2
     assert {"name", "age"} <= set(rows[0].keys())  # Verify if there are the headers
+
+
 # ---------------------------------------------------------------#
 # -------------------TESTES CSV2JSON----------------------------#
 # ---------------------------------------------------------------#

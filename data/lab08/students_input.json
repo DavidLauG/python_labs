@@ -1,7 +1,7 @@
 [
   {
-    "fio": "Silva Santos João",
-    "birthdate": "2003-05-15",
+    "fio": "Domingos Sebastião",
+    "birthdate": "2001-05-15",
     "group": "БИВТ-6",
     "gpa": 4.2
   },
@@ -12,9 +12,15 @@
     "gpa": 4.0
   },
   {
-    "fio": "Petter Parker",
-    "birthdate": "1998-11-30",
-    "group": "M-6",
-    "gpa": 4.2
+    "fio": "Быстров Андрей Игоревич",
+    "birthdate": "2002-07-15",
+    "group": "БИВТ-5",
+    "gpa": 2.0
+  },
+  {
+    "fio": "Гладкая Алёна Игоревна",
+    "birthdate": "2002-07-15",
+    "group": "БИВТ-7",
+    "gpa": 5.0
   }
 ]
