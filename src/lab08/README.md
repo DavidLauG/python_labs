@@ -175,7 +175,7 @@ def students_from_json(path) -> list[Student]:
             data_from_json = json.load(f)
         if not isinstance(data_from_json, list):
             raise TypeError(
-                f"Expected JSON list/array, but got {type(data_from_json).__name__}"
+                "Expected JSON list/array, but got a diferent type"
             )
         students = []  # Creates a new empty list
         for item in data_from_json:

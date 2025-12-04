@@ -56,7 +56,7 @@ class Student:
             "gpa": self.gpa,
         }
 
-    @classmethod  # Allows you to create a new instance of Student from an existing dictionary.
+    @classmethod  # Allows to create a new instance of Student from an existing dictionary.
     def from_dict(cls, d: dict):
         """
         Deserializes a dictionary into a Student object.
