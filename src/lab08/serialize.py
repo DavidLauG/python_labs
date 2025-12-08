@@ -7,8 +7,8 @@ def students_to_json(students: list[Student], path: str):
     """
     Serializes datas into a JSON file.
     """
-    Json_path=Path(path)
-    #Certify that its a .JSON file
+    Json_path = Path(path)
+    # Certify that its a .JSON file
     if Json_path.suffix.lower() != ".json":
         print(f"The file is not of the .json type.")
         return False
@@ -26,7 +26,7 @@ def students_from_json(path) -> list[Student]:
     """
     Disserializes datas from a JSON file.
     """
-    Json_path=Path(path)
+    Json_path = Path(path)
     if Json_path.suffix.lower() != ".json":
         print(f"The file is not of the .json type.")
         return False
@@ -34,9 +34,7 @@ def students_from_json(path) -> list[Student]:
         with open(path, "r", encoding="utf-8") as f:
             data_from_json = json.load(f)
         if not isinstance(data_from_json, list):
-            raise TypeError(
-                "Expected JSON list/array, but got a diferent type"
-            )
+            raise TypeError("Expected JSON list/array, but got a diferent type")
         students = []  # Creates a new empty list
         for item in data_from_json:
             try:

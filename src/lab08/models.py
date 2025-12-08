@@ -2,6 +2,8 @@ from dataclasses import dataclass
 import datetime
 
 
+# Decorator to automatically generate __init__ and __post_init__ methods.
+# And armazenates datas (students' data)
 @dataclass
 class Student:
     fio: str
@@ -18,7 +20,6 @@ class Student:
         """
         # Add proper validation of date format and gpa range (YYYY-MM-DD)
         try:
-            # datetime.strptime(self.birthdate, "%Y/%m/%d")
             # String birthdate -> Python object ISO Fortmat for DateAndTime
             birth_date_obj = datetime.date.fromisoformat(self.birthdate)
         except ValueError:
@@ -31,6 +32,8 @@ class Student:
             raise ValueError(
                 "Invalid date range. Date of birth cannot be later than today's date."
             )
+        if not isinstance(self.gpa, float):
+            self.gpa = float(self.gpa)
         if not (0.0 <= self.gpa <= 5.0):
             raise ValueError("gpa must be between 0.0 and 5.0")
 
