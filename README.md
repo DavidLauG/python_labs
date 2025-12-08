@@ -58,3 +58,8 @@ Accurately format text representations of records (using a student as an example
 ### Goal: To learn the basics of object-oriented programming in Python, learn how to describe data models using @dataclass, implement methods and validation, and serialize/deserialize objects.
 ### Цель: Цель: изучить основы объектно-ориентированного программирования в Python, научиться описывать модели данных с помощью @dataclass, реализовывать методы и валидацию, сериализовывать/десериализовывать объекты.
 ### *[Go to Laboratory 08](./src/lab08/)*
+
+## ЛР9 — «База данных» на CSV: класс Group, CRUD-операции и CLI
+### Goal: to implement a simple student data storage based on a CSV file, practice CRUD operations (Create/Read/Update/Delete) and learn how to work with them through a separate Group class
+### Цель: реализовать простейшее хранилище данных студентов на основе CSV-файла, отработать CRUD-операции (Create / Read / Update / Delete) и научиться работать с ними через отдельный класс Group.
+### *[Go to Laboratory 09](./src/lab09/)*
