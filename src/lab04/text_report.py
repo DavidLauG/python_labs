@@ -4,7 +4,7 @@ import os
 sys.path.append(os.path.join(os.path.dirname(__file__), ".."))
 
 from lib.text import normalize, tokenize, count_freq, top_n
-from io_txt_csv import read_text, write_csv
+from lab04.io_txt_csv import read_text, write_csv
 
 
 caminho_texto = "data/lab04/input.txt"

@@ -30,7 +30,7 @@ class Student:
             )
         if datetime.date.today() < birth_date_obj:
             raise ValueError(
-                "Invalid date range. Date of birth cannot be later than today's date."
+                "Invalid date range. Date of birth cannot be later or equals to today's date."
             )
         if not isinstance(self.gpa, float):
             self.gpa = float(self.gpa)
@@ -133,7 +133,7 @@ if __name__ == "__main__":
     try:
         student_invalid_date_range = Student(
             fio="Давид Гонсалу Лауринду",
-            birthdate="2026-07-27",
+            birthdate="2026-12-11",
             group="БИВТ-6",
             gpa=4.2,
         )

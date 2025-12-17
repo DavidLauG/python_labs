@@ -136,10 +136,11 @@ def csv_to_json(csv_path: str, json_path: str) -> None:
         return False
 
 
-# Json_People = "data/samples/people.json"
-# CSV_from_JSON = "data/out/people_from_json.csv"
-# json_to_csv(Json_People, CSV_from_JSON)
+if __name__ == "__main__":
+    Json_People = "data/samples/people.json"
+    CSV_from_JSON = "data/out/people_from_json.csv"
+    json_to_csv(Json_People, CSV_from_JSON)
 
-# CSV_People = "data/samples/people.csv"
-# JSON_from_CSV = "data/out/people_from_csv.json"
-# csv_to_json(CSV_People, JSON_from_CSV)
+    CSV_People = "data/samples/people.csv"
+    JSON_from_CSV = "data/out/people_from_csv.json"
+    csv_to_json(CSV_People, JSON_from_CSV)

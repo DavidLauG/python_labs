@@ -33,9 +33,10 @@ def csv_to_xlsx(csv_path: str, xlsx_path: str) -> None:
         print(f"Error: {e}")
 
 
-CSV_People = "data/samples/people.csv"
-XLSX_from_CSV = "data/out/people.xlsx"
-# csv_to_xlsx(CSV_People, XLSX_from_CSV)
-CSV_Cities = "data/samples/cities.csv"
-XLSX_from_CSV_C = "data/out/cities.xlsx"
-# csv_to_xlsx(CSV_Cities, XLSX_from_CSV_C)
+if __name__ == "__main__":
+    CSV_People = "data/samples/people.csv"
+    XLSX_from_CSV = "data/out/people.xlsx"
+    csv_to_xlsx(CSV_People, XLSX_from_CSV)
+    CSV_Cities = "data/samples/cities.csv"
+    XLSX_from_CSV_C = "data/out/cities.xlsx"
+    # csv_to_xlsx(CSV_Cities, XLSX_from_CSV_C)
