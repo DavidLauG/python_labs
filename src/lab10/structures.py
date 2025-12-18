@@ -2,8 +2,8 @@ from collections import deque
 from typing import Any
 
 
-class Stack:
-    """A stack (LIFO) data structure based on list."""  # «стек»
+class Stack: # «стек - Pilha»
+    """A stack (LIFO) data structure based on list."""  
 
     def __init__(self):
         self._data: list[Any] = []
@@ -33,8 +33,8 @@ class Stack:
         return len(self._data)
 
 
-class Queue:
-    """A FIFO data structure based on collections.deque."""  # «очередь»
+class Queue: # «очередь - Fila»
+    """A FIFO data structure based on collections.deque."""  
 
     def __init__(self):
         self._data: deque[Any] = deque()
@@ -82,10 +82,10 @@ if __name__ == "__main__":
     print(f"   Empty? {stack.is_empty()}, Length: {len(stack)}, Top: {stack.peek()}")
 
     elements = [15, 30, 5, "Author", ["David", "Laurindo"]]
-    for elem in elements:
+    for element in elements:
         # Executing LIFO
-        stack.push(elem)  # Adding new elements to the top of the list
-        print(f"2. Added {elem}: {stack}")  # Showing added element
+        stack.push(element)  # Adding new elements to the top of the list
+        print(f"2. Added {element}: {stack}")  # Showing added element
         print(f"   Upper: {stack.peek()}, Length: {len(stack)}")  # Element on the Top
 
     print(f"\n   Empty? {stack.is_empty()}, Length: {len(stack)}, Top: {stack.peek()}")
