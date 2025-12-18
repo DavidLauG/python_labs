@@ -4,6 +4,7 @@ from typing import List
 from lab08.models import Student
 from lib.text import count_freq
 from lab02.arrays import min_max
+from lib.text import normalize
 
 
 class Group:
@@ -52,8 +53,9 @@ class Group:
                 continue
         return students
 
-    def add(self, student: Student):
+    def add(self, student_in: Student):
         """Add a new student to CSV."""
+        student= normalize(student_in)
         if not isinstance(student, Student):  # Invalid student data.
             raise TypeError("The object must be an instance of the Student class.")
 
@@ -69,13 +71,14 @@ class Group:
 
     def find(self, substr: str) -> List[Student]:
         """Find students by substring in fio."""
+        to_find=normalize(substr)
         all_students = self.list()
         return print(
-            f"Search for '{substr}':",
+            f"Search for '{to_find}':",
             [
                 student
                 for student in all_students
-                if substr.lower() in student.fio.lower()
+                if to_find.lower() in student.fio.lower()
             ],
         )
 

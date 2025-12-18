@@ -15,7 +15,7 @@ def print_students(title, students: Student):
 
 
 if __name__ == "__main__":
-
+    
     print_students("Original CSV:", g.list())
 
     new_st = Student("Афанасьева Андреевна", "2004-02-22", "BIVT-08", 3.0)
@@ -25,8 +25,8 @@ if __name__ == "__main__":
     print_students("After adding 2 students:", g.list())
 
     g.update("David Laurindo", gpa=4.7)
-
-    g.find("Laurindo")  # searching by substring
+  
+    g.find("lau   ")  # searching by substring
 
     g.remove("David Laurindo")
     
