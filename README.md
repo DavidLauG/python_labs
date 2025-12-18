@@ -62,7 +62,7 @@ Accurately format text representations of records (using a student as an example
 ## ЛР9 — «База данных» на CSV: класс Group, CRUD-операции и CLI
 ### Goal: to implement a simple student data storage based on a CSV file, practice CRUD operations (Create/Read/Update/Delete) and learn how to work with them through a separate Group class
 ### Цель: реализовать простейшее хранилище данных студентов на основе CSV-файла, отработать CRUD-операции (Create / Read / Update / Delete) и научиться работать с ними через отдельный класс Group.
-### *[Go to Laboratory 09](./src/lab09/)*~
+### *[Go to Laboratory 09](./src/lab09/)*
 
 ## ЛР10 — Структуры данных: Stack, Queue, Linked List и бенчмарки
 ### Goal: implement basic data structures (stack, queue, linked list), compare their performance and learn to think in terms of asymptotics (O(1), O(n)).
