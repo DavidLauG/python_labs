@@ -1,6 +1,7 @@
 # ЛР10 — Структуры данных: Stack, Queue, Linked List и бенчмарки
 
 # ПРАКТИЧЕСКАЯ ЧАСТЬ (Примеры кода с выводом результатов)
+### *[Go to the theory](README_THEORY.md)*
 ## Задание A. Реализовать Stack и Queue (src/lab10/structures.py)
 ```python
 from collections import deque

@@ -1,6 +1,7 @@
 # ЛР10 — Структуры данных: Stack, Queue, Linked List и бенчмарки
 
 # ТЕОРЕТИЧЕСКАЯ ЧАСТЬ (Краткое изложение на основе материала, представленного в документации Python)
+### *[Go to the Practice](README_PRACTICE.md)*
 ## **Стек (Stack) - pilha**
 ### ***Принцип: LIFO — Last In, First Out.***
 
